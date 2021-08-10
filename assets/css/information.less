@@ -1,0 +1,193 @@
+body{
+    background: #f1f1f1;
+}
+// 中部
+.content{
+    margin-bottom: 2em;
+    .container{
+
+        .top{
+            margin-bottom: 2em;
+            .tt1{
+                h1{
+                    font-size: 3em;
+                    font-weight: bold;
+                }
+            }
+           
+            .img{
+                img{
+                    width: 10%;
+                }
+            }
+        }
+
+        .bottom{
+           .center{
+               width: 100%;
+               display: flex;
+               justify-content: space-between;
+               margin-bottom: 5em;
+               .left{
+                    width: 47%;
+                   .top{
+                       width: 100%;
+                   }
+                   .bottom{
+                       margin-bottom: 2em;
+                       .w1{
+                           margin-bottom: 2em;
+                           .r8{
+                               display: flex;
+                               justify-content: space-between;
+                               span{
+                                   font-size: 3em;
+                                   font-weight: bold;
+                                   
+                               }
+                               p{
+                                padding-top: 3em;
+                            }
+                           }
+                       }
+                       .w2{
+                           margin-bottom: 2em;
+                           p{
+                            font-family: OSLight;
+                            color: #666666;
+                           }
+                       }
+                       .buttom{
+                        background: #f9bc02;
+                        width: 10em;
+                        height: 3em;
+                        border: 0;
+                        box-shadow: 0px 18px 10px -4px ;
+                        transition: all linear .5s;
+
+
+                        p{
+                            color: #000;
+                            font-weight: bold;
+                            letter-spacing: 2px;
+                        }
+
+                        &:hover{
+                            transform: translateY(-5px);
+                        }
+                    }
+
+                   }
+               }
+               .right{
+                   width: 47%;
+                .top{
+                    width: 100%;
+                }
+                .bottom{
+                    
+                    .w1{
+                        margin-bottom: 2em;
+                        .r8{
+                            display: flex;
+                            justify-content: space-between;
+                            span{
+                                font-size: 3em;
+                                font-weight: bold;
+                                
+                            }
+                            p{
+                             padding-top: 3em;
+                         }
+                        }
+                    }
+                    .w2{
+                        margin-bottom: 2em;
+                        p{
+                         font-family: OSLight;
+                         color: #666666;
+                        }
+                    }
+                    .buttom{
+                     background: #f9bc02;
+                     width: 10em;
+                     height: 3em;
+                     border: 0;
+                     box-shadow: 0px 18px 10px -4px ;
+                     transition: all linear .5s;
+
+
+                     p{
+                         color: #000;
+                         font-weight: bold;
+                         letter-spacing: 2px;
+                     }
+
+                     &:hover{
+                         transform: translateY(-5px);
+                     }
+                 }
+
+                }
+               }
+           }
+        }
+    }
+    @media screen and(max-width:780px) {
+        &{
+            .container{
+                .top{
+                    .tt1{
+                        h1{
+                            font-size: 2em;
+                        }
+                    }
+                    .img{
+                        margin-bottom: 2em;
+                    }
+                }
+                .bottom{
+                    .center{
+                        flex-wrap: wrap;
+
+                        .left{
+                            width: 100%;
+                            .bottom{
+                                margin-bottom: 5em;
+                                .w1{
+                                    .r8{
+                                        span{
+                                            font-size: 2em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .right{
+                            width: 100%;
+                            .bottom{
+                                .w1{
+                                    .r8{
+                                        span{
+                                            font-size: 2em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 包图家居
+.img{
+    margin-bottom: 5em;
+    .container{
+        img{
+            width: 100%;
+        }
+    }
+}

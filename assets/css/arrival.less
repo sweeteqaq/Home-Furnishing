@@ -1,0 +1,226 @@
+// 新品为你呈上
+.banner{
+    
+    margin-bottom: 10em;
+    img{
+        width: 100%;
+    }
+    @media screen and(max-width:420px) {
+            &{
+                margin-bottom: 2em;
+            }
+    }
+}
+
+
+// 新品上新
+.about{
+    margin-bottom: 10em;
+    .container{
+        
+        .top{
+            text-align: center;
+            .top1{
+                span{
+                    font-size: 3em;
+                    color: #f9bc02;
+                    letter-spacing: 2px;
+                }
+            }
+            .bottom2{
+                span{
+                    font-family: OSLight;
+                    font-size: 2.5em;
+                }
+            }
+            
+        }
+        .bottom{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    @media screen and(max-width:420px) {
+        &{
+            margin-bottom: 3em;
+            .container{
+                .top{
+                    .top1{
+                        span{
+                            font-size: 2em;
+                        }
+                    }
+                    .bottom2{
+                        span{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 轮播图
+.conner{
+    margin-bottom: 10em;
+    .carousel{
+        .carousel-inner{
+            .item{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:420px) {
+            &{
+                margin-bottom: 4em;
+            }
+    }
+}
+
+// 为你推荐
+.many{
+    margin-bottom: 5em;
+    .container{
+        .top{
+            margin-bottom: 3em;
+            text-align: center;
+            .up{
+                span{
+                    font-size: 3em;
+                    font-weight: bold;
+                    color: #f9bc02;
+                }
+            }
+            .dowm{
+                span{
+                    font-size: 2.5em;
+                    font-family:OSLight ;
+                }
+            }
+        }
+
+        .conter{
+            margin-bottom: 3em;
+            .transverse{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .left{
+                    width: 49%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .right{
+                    width:49%;
+
+                    .d1{
+                        margin-bottom: 1em;
+                        h1{
+                            font-size: 2em;
+                        }
+                    }
+                    .d2{
+                        margin-bottom: 1em;
+                        p{
+                            font-family:OSLight ;
+                            line-height: 27px;
+                        }
+                    }
+                    .d3{
+                        p{
+                            font-size: 2.5em;
+                            color: #f9bc02;
+                        }
+                    }
+                    .buttom{
+                        margin-left: 80%;
+                        background: #f9bc02;
+                        width: 7em;
+                        height: 3em;
+                        border: 0;
+                        box-shadow: 0px 18px 10px -4px ;
+                        transition: all linear .5s;
+
+
+                        p{
+                            color: #000;
+                            font-weight: bold;
+                            letter-spacing: 2px;
+                        }
+
+                        &:hover{
+                            transform: translateY(-5px);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        
+        
+    }
+
+    @media screen and(max-width:420px) {
+            &{
+                .container{
+                    .top{
+                        .up{
+                            span{
+                                font-size: 2em;
+                            }
+                        }
+                        .dowm{
+                            span{
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+
+    @media screen and(max-width:1000px) {
+        &{
+            .container{
+                .conter{
+                    .transverse{
+                        flex-wrap: wrap;
+                        .left{
+                            width: 100%;
+                        }
+                        .right{
+                            width: 100%;
+
+                            .d1{
+                                text-align: center;
+                            }
+
+                            .buttom{
+                                margin-left: 60%;
+                            }
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+// 包图家居
+.img{
+    margin-bottom: 5em;
+    .container{
+        img{
+            width: 100%;
+        }
+    }
+}

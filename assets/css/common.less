@@ -1,0 +1,150 @@
+body{
+    background: #f1f1f1;
+}
+.header{
+    position: sticky;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .navbar{
+        margin-bottom: 0px;
+    }
+    .navbar-default {
+        background-color: #fff;
+        border-color: #fff;
+
+        
+
+        .container{
+            .navbar-header{
+                .logo{
+                    padding: 10px 15px;
+                }
+            }
+            .nav{
+                a{
+                    color:#000;
+                    text-transform: uppercase;
+                    border-bottom:3px solid transparent;
+                    transition:all linear .3s;
+    
+                    &:hover{
+                        border-bottom:3px solid #fcac45;
+                    }
+                }
+            }
+        
+        }
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border-color:#fff ;
+    }
+
+    @media screen and (max-width:768px){
+        &{
+            
+            .navbar{
+                .nav{
+                    a{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        
+    }
+
+}
+
+.footer{
+    background: #000;
+    .container{
+        
+        .work{
+            padding: 5em;
+            display: flex;
+            justify-content: space-around;
+            .t1{
+                color: #fff;
+                line-height: 3em;
+
+                span{
+                    font-weight: bold;
+                }
+            }
+
+            .t2{
+                
+                .bon{
+                    padding: 2em;
+                    text-align: center;
+                    color:#fff;
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:650px) {
+          &{
+              .container{
+                  .work{
+                      flex-wrap: wrap;
+                      .t1{
+                          width: 100%;
+                          text-align: center;
+                      }
+                  }
+              }
+          }  
+    }
+}
+
+
+/* 返回顶部 */
+#gotop {
+    position: fixed;
+    bottom: 90px;
+    right: 0%;
+    width: 80px;
+    cursor: pointer;
+    z-index: -99998;
+    opacity: 0;
+
+    transition: all linear .4s;
+
+    &:hover {
+        animation: rubberBand 1s;
+    }
+
+    @keyframes rubberBand {
+        from {
+          transform: scale3d(1, 1, 1);
+        }
+      
+        30% {
+          transform: scale3d(1.25, 0.75, 1);
+        }
+      
+        40% {
+          transform: scale3d(0.75, 1.25, 1);
+        }
+      
+        50% {
+          transform: scale3d(1.15, 0.85, 1);
+        }
+      
+        65% {
+          transform: scale3d(.95, 1.05, 1);
+        }
+      
+        75% {
+          transform: scale3d(1.05, .95, 1);
+        }
+      
+        to {
+          transform: scale3d(1, 1, 1);
+        }
+      }
+}
